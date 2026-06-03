@@ -1,0 +1,62 @@
+{
+  "app": {
+    "name": "SideStack",
+    "tagline": "Your Apps. Your Store.",
+    "description": "A native Android app store for sideloaded apps. Browse, download, and install all SideStack apps from a single clean interface on your device. No Play Store. No accounts. No nonsense.",
+    "latestVersion": "1.0",
+    "eyebrow": "Android App Store",
+    "icon": "https://raw.githubusercontent.com/DamienSmith428/SideStack-app-public/main/icon/app_icon_main.png"
+  },
+  "github": {
+    "repo": "DamienSmith428/SideStack-app-public",
+    "baseUrl": "https://github.com/DamienSmith428/SideStack-app-public"
+  },
+  "stats": [
+    {
+      "value": "1",
+      "label": "APK Build"
+    },
+    {
+      "value": "0",
+      "label": "Data Collected"
+    },
+    {
+      "value": "3",
+      "label": "Core Features"
+    },
+    {
+      "value": "N/A",
+      "label": "License"
+    }
+  ],
+  "features": [
+    {
+      "icon": "🏪",
+      "title": "App Store",
+      "description": "Browse all available SideStack apps from a single native interface with clean app cards showing icon, name, version, and category."
+    },
+    {
+      "icon": "⬇️",
+      "title": "In-App Downloads",
+      "description": "Tap any app card to view its full page inside the app. Download APKs directly — no browser required. Install prompt triggers automatically on completion."
+    },
+    {
+      "icon": "🔍",
+      "title": "Search",
+      "description": "Filter apps by name, category, or description instantly as you type. Find what you want without scrolling."
+    }
+  ],
+  "downloads": [
+    {
+      "arch": "Universal",
+      "description": "Works on all supported Android devices.",
+      "recommended": true,
+      "filename": "app-v{version}-release.apk"
+    }
+  ],
+  "changelog": {
+    "versions": [
+      "v1.0.json"
+    ]
+  }
+}

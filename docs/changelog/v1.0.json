@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "date": "06/03/2026",
+  "tag": "Initial Release",
+  "tagStyle": "initial",
+  "githubReleaseUrl": "https://github.com/DamienSmith428/SideStack-app-public/releases/tag/SideStack-V1.0",
+  "changes": [
+    {
+      "type": "added",
+      "items": [
+        "Browse all SideStack apps from a single native Android interface",
+        "App cards showing icon, name, tagline, and current version",
+        "Tap any app card to view the full app page in-app via WebView",
+        "In-app APK downloads with automatic install prompt on completion",
+        "Search bar to filter apps by name, category, or description",
+        "Pull to refresh to check for newly added apps"
+      ]
+    }
+  ]
+}
