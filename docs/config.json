@@ -51,7 +51,7 @@
       "arch": "Universal",
       "description": "Works on all supported Android devices.",
       "recommended": true,
-      "filename": "app-v{version}-release.apk"
+      "filename": "app-{version}-release.apk"
     }
   ],
   "changelog": {
