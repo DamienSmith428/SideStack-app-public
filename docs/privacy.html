@@ -415,13 +415,13 @@ footer a:hover { color: var(--cyan); }
 <div class="orb orb-2"></div>
 
 <nav>
-  <a href="index.html" class="nav-logo">Link<span>Vault</span></a>
+  <a href="index.html" class="nav-logo">Side<span>Stack</span></a>
   <ul class="nav-links">
     <li><a href="index.html#features">Features</a></li>
     <li><a href="index.html#download">Download</a></li>
     <li><a href="changelog.html">Changelog</a></li>
     <li><a href="privacy.html">Privacy</a></li>
-    <li><a href="https://github.com/DamienSmith428/SideStack" id="nav-github" target="_blank">GitHub ↗</a></li>
+    <li><a href="https://github.com/DamienSmith428/SideStack-app-public" id="nav-github" target="_blank">GitHub ↗</a></li>
   </ul>
 </nav>
 
@@ -447,10 +447,10 @@ footer a:hover { color: var(--cyan); }
     <h2>Network Activity</h2>
     <p>The only network requests SideStack makes are ones you directly trigger:</p>
     <ul>
-      <li>Downloading a media file from a link you saved</li>
-      <li>Scraping metadata (title, artist, thumbnail) from a YouTube link you shared into the app</li>
+      <li>Loading app listings from config files hosted on GitHub</li>
+      <li>Downloading an APK file you chose to download</li>
     </ul>
-    <p style="margin-top: 20px;">These requests go directly to the relevant platform (e.g. YouTube). No data passes through any server owned or operated by this project.</p>
+    <p style="margin-top: 20px;">These requests go directly to GitHub. No data passes through any server owned or operated by this project.</p>
   </div>
 
   <div class="policy-section">
@@ -466,15 +466,11 @@ footer a:hover { color: var(--cyan); }
       <tbody>
         <tr>
           <td>Internet</td>
-          <td>Downloading media and scraping metadata from links you save</td>
+          <td>Loading app listings and downloading APKs</td>
         </tr>
         <tr>
-          <td>Read / Write Storage</td>
-          <td>Saving downloaded files to your device storage</td>
-        </tr>
-        <tr>
-          <td>Foreground Service</td>
-          <td>Keeping downloads running while the app is in the background</td>
+          <td>Request Install Packages</td>
+          <td>Triggering the install prompt after a download completes</td>
         </tr>
       </tbody>
     </table></div>
@@ -483,7 +479,7 @@ footer a:hover { color: var(--cyan); }
 
   <div class="policy-section">
     <h2>Third Party Services</h2>
-    <p>SideStack uses yt-dlp internally to process downloads. yt-dlp is an open source tool that runs entirely on your device — it does not send data to any third party service. You can review its source code at <a href="https://github.com/yt-dlp/yt-dlp" target="_blank" style="color: var(--cyan); text-shadow: 0 0 8px rgba(0,255,224,0.4);">github.com/yt-dlp/yt-dlp</a>.</p>
+    <p>SideStack loads app listings and APKs from GitHub. GitHub's own privacy policy applies to those requests. SideStack has no affiliation with GitHub beyond using it as a hosting platform.</p>
   </div>
 
   <div class="policy-section">
@@ -498,7 +494,7 @@ footer a:hover { color: var(--cyan); }
 
   <div class="policy-section">
     <h2>Contact</h2>
-    <p>Questions about this policy? Open an issue on <a href="https://github.com/DamienSmith428/SideStack/issues" target="_blank" style="color: var(--cyan); text-shadow: 0 0 8px rgba(0,255,224,0.4);">GitHub</a>.</p>
+    <p>Questions about this policy? Open an issue on <a href="https://github.com/DamienSmith428/SideStack-app-public/issues" target="_blank" style="color: var(--cyan); text-shadow: 0 0 8px rgba(0,255,224,0.4);">GitHub</a>.</p>
   </div>
 
   <p class="last-updated">This policy was last updated on 6/2/2026.</p>
@@ -510,7 +506,7 @@ footer a:hover { color: var(--cyan); }
   <div class="footer-links">
     <a href="privacy.html">Privacy</a>
     <a href="changelog.html">Changelog</a>
-    <a href="https://github.com/DamienSmith428/SideStack" id="footer-github-link" target="_blank">GitHub</a>
+    <a href="https://github.com/DamienSmith428/SideStack-app-public" id="footer-github-link" target="_blank">GitHub</a>
   </div>
 </footer>
 
@@ -535,7 +531,7 @@ fetch('config.json').then(r => r.json()).then(cfg => {
   document.getElementById('footer-github-user').href = user;
   document.getElementById('footer-github-link').href = gh;
   // Issues link in the policy body
-  const issuesLinks = document.querySelectorAll('a[href*="DamienSmith428/SideStack/issues"]');
+  const issuesLinks = document.querySelectorAll('a[href*="DamienSmith428/SideStack-app-public/issues"]');
   issuesLinks.forEach(a => a.href = `${gh}/issues`);
 });
 </script>
