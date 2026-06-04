@@ -21,7 +21,7 @@
       "label": "Data Collected"
     },
     {
-      "value": "3",
+      "value": "4",
       "label": "Core Features"
     },
     {
@@ -44,6 +44,11 @@
       "icon": "🔍",
       "title": "Search",
       "description": "Filter apps by name, category, or description instantly as you type. Find what you want without scrolling."
+    },
+    {
+      "icon": "🔔",
+      "title": "Update Tracker",
+      "description": "SideStack checks installed apps against the latest available versions and shows a dedicated screen listing every app with an update ready to download."
     }
   ],
   "downloads": [
