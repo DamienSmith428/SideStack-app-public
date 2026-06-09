@@ -663,8 +663,7 @@ footer a:hover { color: var(--cyan); }
     </div>
     <p class="hero-eyebrow" id="hero-eyebrow">Android Media Manager</p>
     <h1>
-      <span class="line1">Own Your</span>
-      <span class="line2" id="hero-tagline">Media.</span>
+      <span class="line2" id="hero-tagline">Store.</span>
     </h1>
     <p class="hero-sub" id="hero-sub"></p>
     <div class="hero-buttons">
@@ -787,7 +786,7 @@ async function loadConfig() {
   // Badge + hero
   document.getElementById('hero-version-badge').textContent = `v${cfg.app.latestVersion} Now Available`;
   document.getElementById('hero-eyebrow').textContent = cfg.app.eyebrow;
-  document.getElementById('hero-tagline').textContent = cfg.app.tagline.split(' ').pop() + '.'; // last word
+  document.getElementById('hero-tagline').textContent = cfg.app.tagline;
   document.getElementById('hero-sub').innerHTML = cfg.app.description
     .replace('full metadata', '<strong>full metadata</strong>')
     .replace('album art', '<strong>album art</strong>')
